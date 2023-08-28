@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>sigma-calc</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+    <li><a href="../index.html">HOME</a></li>
+    </div>
+    <h1>SIGMA-CALCULATOR</h1>
+  </header>
+  <main>
+
+    <article id='buttons'>
+      <div class="formula-wrapper">
+        <input class="formula-input"></input>
+        <div id="big-operator-input">
+          <div class="limit-wrapper">
+            <label for="upper-limit">n=</label>
+            <input type='number' id='upper-limit' min='1' value='1'>
+          </div>
+          <p id="active-big-operator">Σ</p>
+          <div class="limit-wrapper">
+            <label for="lower-limit">i=</label>
+            <input type='number' id='lower-limit' min='1' value='1'>
+          </div>
+        </div>
+        <div id="sum-input"></div>
+      </div>
+
+      <button id='Σ-btn' class='big-operator'>Σ</button>
+      <button id='Π-btn' class='big-operator'>Π</button>
+
+      <button id='(-btn' class='bracket'>(</button>
+      <button id=')-btn' class='bracket'>)</button>
+      <button id='i-btn' class='numeral'>i</button>
+
+      <button id='AC-btn' class="delete">AC</button>
+
+      <button id='1-btn' class="numeral">1</button>
+      <button id='2-btn' class="numeral">2</button>
+      <button id='3-btn' class="numeral">3</button>
+
+      <button id='+-btn' class='operator'>+</button>
+      <button id='÷-btn' class='operator'>÷</button>
+      <button id='**-btn' class='operator'>∗∗</button>
+
+      <button id='4-btn' class="numeral">4</button>
+      <button id='5-btn' class="numeral">5</button>
+      <button id='6-btn' class="numeral">6</button>
+
+      <button id='subtract-btn' class='operator'>−</button>
+      <button id='times-btn' class='operator'>×</button>
+      <button id='root-btn' class='operator'>√</button>
+
+      <button id='7-btn' class="numeral">7</button>
+      <button id='8-btn' class="numeral">8</button>
+      <button id='9-btn' class="numeral">9</button>
+      <button id='0-btn' class="numeral">0</button>
+
+      <button id="period">.</button>
+      
+      <button id="equals">=</button>
+    </article>
+
+
+  </main>
+
+<script src='./js/main.js' type='module'></script>
+</body>
+
+</html>
